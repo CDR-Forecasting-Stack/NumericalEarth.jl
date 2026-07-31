@@ -52,7 +52,7 @@ GLODAP_file_variable_names = Dict(
     )
 
 # Dataset types
-abstract type GLODAPDataset end
+abstract type GLODAPDataset <:AbstractStaticDataset end
 
 struct GLODAPClimatology <: GLODAPDataset
     product_year :: Int
